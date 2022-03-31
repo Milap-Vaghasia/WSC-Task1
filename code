@@ -1,0 +1,13 @@
+n = int(input("Enter no. of trades"))
+a=0
+b=0
+for i in range(n):
+    tr = input("Type:")
+    if (tr.upper() == "LONG"):
+        a = a+1
+    elif (tr.upper() == "SHORT"):
+        b = b+1
+    else:
+        print("Incorrect trade type")
+print("no. of long trades: " +str(a))
+print("no. of short trades: " +str(b))
